@@ -36,7 +36,7 @@ main:
 	syscall
 
 	# Get input C from user and save
-	li	$v0,5		# read_int syscall code = 5
+	li	$v0,5		# read_int syscll code = 5
 	syscall	
 	move	$t2,$v0		# syscall results returned in $v0
 
