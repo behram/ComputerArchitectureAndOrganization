@@ -39,8 +39,6 @@ Expose:
 	li	$v0,4
 	la	$a0, msg3
 	syscall
-	
-	j Power
 
 Power:
 	bgt 	$t4,$t1,Expose2
