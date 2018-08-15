@@ -123,7 +123,7 @@ loop2:
 		lw	$t6, 0($t4)			# t6 -- value at pos t4
 		lw	$t7, 0($t5)			# t7 -- value at pos t5
 		
-		blt	$t6, $t7, noSwap 		# if (t6 <= t7) -> don't swap -- branch if less than
+		blt	$t6, $t7, noSwap 		# if (t6 < t7) -> don't swap -- branch if less than
 		
 		sw	$t6, 0($t5)			# t6 -- value at pos t5 (copy)
 		sw	$t7, 0($t4)					# sw saves a word from register into ram
